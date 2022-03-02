@@ -19,22 +19,11 @@ function Home() {
             <div className='homeMain'>
                 <div className='header'>
                     <h4>Countries</h4>
-                    {post.filter((value, index, self) =>
-                        index === self.findIndex((t) => t.region === value.region)
-                    ).map((value, i) => {
-                        return (
-                    <div className='listRegion'>
-                        <div className='headingContainer' key={i}>
-                            <p className='regionLinks'>{value.region}</p>
-                        </div>
-                    </div>
-                    )
-                    })}
                 </div>
                 <div className='gridContainer'>
                     {post.map((value, i) => {
                         return (
-                            <div key={i}>
+                            <div className='gridList' key={i}>
                                 <div className='grid' >
                                     <img className='flagImg' src={value.flag} />
                                     <div className='textContainer'>

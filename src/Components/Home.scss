@@ -29,6 +29,9 @@
         .gridContainer{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            .gridList{
+                padding-bottom: 15px;
+            }
         .grid{
             display: flex;
             padding: 5px;
