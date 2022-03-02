@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.signinContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    .heading{
+        font-weight: 600;
+    }
+    .user{
+        display: flex;
+        font-size: 16px;
+        .account{
+            color: #587FFF;
+            margin-block-start: 1em;
+            padding-left: 5px;
+            text-decoration: none;
+        }
+    }
+    .form-control{
+        height: 20px;
+        width: 200px;
+        border-color: gray;
+    }
+    .form-group2{
+        padding-top: 10px;
+    }
+    .checkboxContainer{
+        display: flex;
+        padding-top: 10px;
+        .checkbox{
+            margin-block-start: 0;
+            padding-left: 10px;
+        }
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 2px;
+        outline: 0;
+        margin: 10px 0px;
+        cursor: pointer;
+        width: 200px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    .lineContainer{
+        .line{
+            display: flex;
+            flex-direction: row;
+            &:before, &:after{
+                content: "";
+                flex: 1 1;
+                border-bottom: 1px solid;
+                margin: auto;
+            }
+            &::before{
+                margin-right: 10px;
+            }
+            &::after{
+                margin-left: 10px;
+            }
+        }
+        .iconeContainer{
+            display: flex;
+            justify-content: center;
+            .icone{
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+            .icone1{
+                padding-right: 10px;
+            }
+        }
+    }
+    .imgContainer{
+        @media screen and (max-width: 550px) {
+            display: none; 
+        }
+    }
+}

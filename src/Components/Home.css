@@ -1,0 +1,111 @@
+.homeContainer {
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.homeContainer .homeMain .headingContainer .listRegion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeContainer .homeMain .headingContainer:after {
+  content: '';
+  position: absolute;
+  width: 5%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.homeContainer .homeMain .headingContainer:hover, .homeContainer .homeMain .headingContainer:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.homeContainer .homeMain .gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.homeContainer .homeMain .gridContainer .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  border: 1px solid black;
+  width: 40%;
+}
+
+.homeContainer .homeMain .gridContainer .grid .flagImg {
+  height: 40px;
+  width: 40px;
+}
+
+.homeContainer .homeMain .gridContainer .grid .textContainer {
+  padding-left: 30px;
+}
+
+.homeContainer .homeMain .gridContainer .grid .textContainer .countryText {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.homeContainer .homeMain .gridContainer .grid .textContainer .regionText {
+  font-size: 10px;
+}
+
+.homeContainer .homeMain .regionLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: gray;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.homeContainer .lineContainer {
+  padding-top: 60px;
+}
+
+.homeContainer .lineContainer .iconeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeContainer .lineContainer .iconeContainer .icone {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.homeContainer .lineContainer .iconeContainer .icone1 {
+  padding-right: 10px;
+}
+
+.homeContainer .footer {
+  text-align: center;
+  padding-top: 30px;
+}
+/*# sourceMappingURL=Home.css.map */

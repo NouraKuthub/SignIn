@@ -1,0 +1,84 @@
+.homeContainer{
+    padding: 10px;
+    padding-left: 50px;
+    .homeMain{
+        .headingContainer{
+            .header{
+                display: flex;
+            }
+            .listRegion{
+                display: flex;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 5%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+              }
+              &:hover ,&:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+              }
+        }
+        .gridContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        .grid{
+            display: flex;
+            padding: 5px;
+            border: 1px solid black;
+            width: 40%;
+            .flagImg{
+                height: 40px;
+                width: 40px;
+            }
+            .textContainer{
+                padding-left: 30px;
+                .countryText{
+                    margin-block-start: 0;
+                }
+                .regionText{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .regionLink{ &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: var(--border-size);
+        background-color: gray;
+        transform: scaleX(0);
+      }
+    }
+    }
+    .lineContainer{
+        padding-top: 60px;
+        .iconeContainer{
+            display: flex;
+            justify-content: center;
+            .icone{
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+            .icone1{
+                padding-right: 10px;
+            }
+        }
+    }
+    .footer{
+        text-align: center;
+        padding-top: 30px;
+    }
+}
